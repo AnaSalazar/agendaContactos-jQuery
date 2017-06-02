@@ -2,11 +2,45 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Estandar</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
+    <section class="container">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header col-sm-12">
+            <h1>Contactos Telefónicos</h1>
+            <span class="navbar-text navbar-right"># Contactos:</span>
+          </div>
+        </div>
+      </nav>
 
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group col-sm-5">
+            <input type="text" class="form-control" placeholder="A quién buscas?">
+          </div>
+          <button type="submit" class="btn btn-default">Buscar</button>
+        </div>
+        <div class="col-sm-6 text-right">
+          <button type="button" class="btn btn-success">Agregar contacto</button>
+        </div>
+      </div>
+
+      <div class="row" id="agenda">
+        <article class="jumbotron">
+          <p>Nombre: Ana</p>
+          <p>Numero: 55123467</p>
+        </article>
+        <article class="jumbotron">
+          <p>Nombre: Stephany</p>
+          <p>Numero: 55123467</p>
+        </article>
+      </div>
+      
+    </section>
   </body>
 </html>
