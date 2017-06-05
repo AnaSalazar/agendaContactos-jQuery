@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Estandar</title>
+    <title>Agenda de Contactos</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
@@ -13,7 +13,7 @@
         <div class="container-fluid">
           <div class="navbar-header col-sm-12">
             <h1>Contactos Telefónicos</h1>
-            <span class="navbar-text navbar-right"># Contactos:</span>
+            <span class="navbar-text navbar-right"># Contactos:<span id="cantidadContactos"></span>
           </div>
         </div>
       </nav>
@@ -42,28 +42,28 @@
                 </button>
               </div>
               <div class="modal-body">
-                <div class="form-group row">
-                  <label for="example-text-input" class="col-sm-3 col-form-label">Nombre</label>
+                <div class="form-group row" id="formularioDatosContacto">
+                  <label for="nombreContacto" class="col-sm-3 col-form-label">Nombre</label>
                   <div class="col-sm-8">
-                    <input class="form-control" type="text" value="" id="example-text-input">
+                    <input class="form-control" type="text" value="" id="nombreContacto">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label for="example-tel-input" class="col-sm-3 col-form-label">Número de Telefono</label>
+                  <label for="telefonoContacto" class="col-sm-3 col-form-label">Número de Telefono</label>
                   <div class="col-sm-8">
-                    <input class="form-control" type="tel" value="" id="example-tel-input">
+                    <input class="form-control" type="tel" value="" id="telefonoContacto">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label for="example-email-input" class="col-sm-3 col-form-label">Email</label>
+                  <label for="emailContacto" class="col-sm-3 col-form-label">Email</label>
                   <div class="col-sm-8">
-                    <input class="form-control" type="email" value="" id="example-email-input">
+                    <input class="form-control" type="email" value="" id="emailContacto">
                   </div>
                 </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary">Guardar Contacto</button>
+                <button id="guardarContacto" type="submit" class="btn btn-primary">Guardar Contacto</button>
               </div>
             </div>
           </div>
@@ -71,14 +71,6 @@
       </div> <!-- cierre de row -->
 
       <div class="row" id="agenda">
-        <article class="jumbotron">
-          <p>Nombre: Ana</p>
-          <p>Numero: 55123467</p>
-        </article>
-        <article class="jumbotron">
-          <p>Nombre: Stephany</p>
-          <p>Numero: 55123467</p>
-        </article>
       </div>
     </section>
     <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
