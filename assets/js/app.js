@@ -38,6 +38,9 @@ var crearNuevoContacto = function (fichaContacto, espacioNombre, espacioTelefono
 
   contadorContactosEnAgenda ++;
   $(cantidadContactos).text(contadorContactosEnAgenda);
+  $("#nombreContacto").val("");
+  $("#telefonoContacto").val("");
+  $("#emailContacto").val("");
 }
 
 var borrarContactoCreado = function () {
